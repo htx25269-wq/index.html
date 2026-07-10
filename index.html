@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HACKED BY DRAGON ETHICAL ZONE</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Creepster&display=swap');
         
         * {
             margin: 0;
@@ -14,7 +14,7 @@
         }
         
         body {
-            background: #000;
+            background: #000000;
             color: #00ff00;
             font-family: 'Press Start 2P', cursive;
             overflow: hidden;
@@ -22,16 +22,19 @@
             position: relative;
         }
         
-        /* Matrix Rain Background */
-        .matrix {
+        .diagonal {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            opacity: 0.15;
-            pointer-events: none;
+            top: 20px;
+            left: -80px;
+            transform: rotate(-45deg);
+            background: #ff0000;
+            color: white;
+            padding: 8px 120px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            z-index: 10;
+            box-shadow: 0 0 15px #ff0000;
         }
         
         .container {
@@ -43,80 +46,88 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 20px;
         }
         
         .logo {
-            width: 380px;
-            height: 380px;
-            border: 4px solid #00ff00;
+            width: 320px;
+            height: 320px;
+            border: 5px solid #ff0000;
             border-radius: 50%;
-            padding: 15px;
-            background: rgba(0, 0, 0, 0.8);
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.9);
             box-shadow: 
-                0 0 30px #00ff00,
-                0 0 60px #00aa00,
-                inset 0 0 40px rgba(0, 255, 0, 0.3);
-            margin-bottom: 30px;
-            animation: glow 2s infinite alternate;
-        }
-        
-        @keyframes glow {
-            from { box-shadow: 0 0 30px #00ff00, 0 0 60px #00aa00; }
-            to { box-shadow: 0 0 50px #00ff00, 0 0 90px #00ff41, inset 0 0 60px rgba(0, 255, 0, 0.5); }
-        }
-        
-        .hacked {
-            font-size: 4.2rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 8px;
-            margin-bottom: 20px;
-            text-shadow: 
-                0 0 10px #00ff00,
-                0 0 20px #00ff00,
                 0 0 40px #ff0000,
-                0 0 60px #ff0000;
-            animation: glitch 1.5s infinite;
-        }
-        
-        @keyframes glitch {
-            0% { transform: translate(0); }
-            20% { transform: translate(-4px, 4px); }
-            40% { transform: translate(-4px, -4px); }
-            60% { transform: translate(4px, 4px); }
-            80% { transform: translate(4px, -4px); }
-            100% { transform: translate(0); }
-        }
-        
-        .we-are {
-            font-size: 2.2rem;
-            margin: 20px 0 15px 0;
-            color: #ff00ff;
-            text-shadow: 0 0 15px #ff00ff;
-        }
-        
-        .names {
-            font-size: 1.8rem;
-            line-height: 2.4rem;
+                0 0 80px #00ff00,
+                inset 0 0 30px rgba(255, 0, 0, 0.4);
             margin-bottom: 25px;
-            color: #00ffff;
-            text-shadow: 0 0 10px #00ffff;
+            animation: pulse 2s infinite;
         }
         
-        .bangla {
-            font-size: 1.6rem;
-            color: #ffff00;
-            margin-top: 15px;
-            text-shadow: 0 0 12px #ffff00;
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
         
-        .footer {
-            position: absolute;
-            bottom: 30px;
+        .afraid {
+            width: 420px;
+            margin: 20px 0 30px 0;
+            border: 3px solid #ffffff;
+            box-shadow: 0 0 30px #ff00ff;
+        }
+        
+        .strike {
+            color: #00ff00;
+            font-size: 1.35rem;
+            margin: 15px 0;
+            letter-spacing: 3px;
+        }
+        
+        .hashtag {
+            background: #ffffff;
+            color: #000000;
+            padding: 8px 15px;
             font-size: 1.1rem;
-            color: #555;
-            letter-spacing: 4px;
+            margin: 12px 0;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .hacked-by {
+            color: #ff0000;
+            font-size: 1.4rem;
+            margin: 20px 0 10px 0;
+            letter-spacing: 2px;
+        }
+        
+        .team {
+            color: #00ffff;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        
+        .main-hack {
+            font-size: 3.2rem;
+            font-weight: bold;
+            letter-spacing: 6px;
+            margin: 15px 0;
+            text-shadow: 
+                0 0 10px #ff0000,
+                0 0 20px #00ff00,
+                0 0 40px #ffff00;
+        }
+        
+        .green-bar {
+            width: 100%;
+            background: linear-gradient(to right, #00ff00, #00cc00);
+            color: black;
+            padding: 14px 0;
+            margin-top: 30px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 8px;
+            box-shadow: 0 0 20px #00ff00;
         }
         
         .scanline {
@@ -128,99 +139,69 @@
             background: linear-gradient(
                 to bottom,
                 transparent 50%,
-                rgba(0, 255, 0, 0.08) 50%
+                rgba(0, 255, 0, 0.1) 50%
             );
-            background-size: 100% 6px;
+            background-size: 100% 8px;
             pointer-events: none;
-            animation: scan 4s linear infinite;
+            animation: scan 6s linear infinite;
             z-index: 3;
-            opacity: 0.4;
+            opacity: 0.3;
         }
         
         @keyframes scan {
             0% { background-position: 0 0; }
-            100% { background-position: 0 600px; }
+            100% { background-position: 0 800px; }
         }
     </style>
 </head>
 <body>
-    <canvas class="matrix" id="matrix"></canvas>
+    <div class="diagonal">DRAGON HACKERS</div>
     
     <div class="container">
-        <img src="https://i.imgur.com/REPLACE_WITH_YOUR_IMAGE_LINK.jpg" 
+        <!-- Dragon Logo -->
+        <img src="https://i.imgur.com/YOUR_DRAGON_LOGO_LINK.jpg" 
              alt="DRAGON ETHICAL ZONE" 
              class="logo"
-             onerror="this.src='https://via.placeholder.com/380x380/000000/00ff00?text=DRAGON+LOGO';">
+             onerror="this.src='https://i.ibb.co/0jZqY8Z/dragon-ethical-zone.jpg';">
         
-        <div class="hacked">HACKED BY</div>
-        <div class="hacked" style="color: #ff0000; font-size: 4.8rem; margin-top: -20px;">DRAGON ETHICAL ZONE</div>
+        <!-- Afraid of the Dark Image -->
+        <img src="https://i.ibb.co/0jZqY8Z/afraid-dark.jpg" 
+             alt="Are You Afraid of the Dark?" 
+             class="afraid">
         
-        <div class="we-are">WE ARE</div>
-        <div class="names">
-            PROFESSOR<br>
-            JACK DOWSON<br>
-            BLACK COBRA
+        <div class="strike">
+            :- WE STRIKE FIRST | WE FUCK HARD | WE SHOW NO MERCY :-
         </div>
         
-        <div class="bangla">WE ARE BANGLADESHI</div>
+        <div class="hashtag">
+            #PROFESSORHACKED • NOW YOU HAVE NOTHING TO LOSE • #LOLPWNED
+        </div>
         
-        <div class="footer">
-            ★ ETHICAL HACKING ★ BANGLADESH CYBER FORCE ★
+        <div class="hacked-by">HACKED BY :</div>
+        <div class="team">
+            PROFESSOR | MR ADE | SK MASTER | MH COBRA
+        </div>
+        
+        <div class="main-hack" style="color:#ff0000;">
+            HACKED BY <span style="color:#00ff00;">DRAGON ETHICAL ZONE</span>
+        </div>
+        
+        <div class="green-bar">
+            STRIKE FIRST &nbsp;&nbsp;&nbsp; FUCK HARD &nbsp;&nbsp;&nbsp; NO MERCY
         </div>
     </div>
     
     <div class="scanline"></div>
 
     <script>
-        // Matrix Rain Effect
-        const canvas = document.getElementById('matrix');
-        const ctx = canvas.getContext('2d');
-        
-        canvas.height = window.innerHeight;
-        canvas.width = window.innerWidth;
-        
-        const chars = '01アイウエオ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzবাংলা';
-        const fontSize = 14;
-        const columns = canvas.width / fontSize;
-        const drops = [];
-        
-        for (let x = 0; x < columns; x++) {
-            drops[x] = Math.floor(Math.random() * canvas.height / fontSize);
-        }
-        
-        function draw() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            
-            ctx.fillStyle = '#00ff00';
-            ctx.font = `${fontSize}px monospace`;
-            
-            for (let i = 0; i < drops.length; i++) {
-                const text = chars[Math.floor(Math.random() * chars.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
-        
-        setInterval(draw, 35);
-        
-        // Resize handler
-        window.addEventListener('resize', () => {
-            canvas.height = window.innerHeight;
-            canvas.width = window.innerWidth;
-        });
-        
-        // Click effect
-        document.addEventListener('click', () => {
-            document.body.style.background = '#110000';
+        // Simple glitch effect on logo
+        const logo = document.querySelector('.logo');
+        setInterval(() => {
+            logo.style.transform = 'scale(1.03)';
             setTimeout(() => {
-                document.body.style.background = '#000';
-            }, 200);
-        });
+                logo.style.transform = 'scale(1)';
+            }, 180);
+        }, 2800);
     </script>
 </body>
 </html>
